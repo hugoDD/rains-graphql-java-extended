@@ -1,7 +1,7 @@
-sudo: required
+sudo: false
+dist: trusty
+
 language: java
-services:
-  - docker
 jdk:
   - oraclejdk8
 before_cache:
@@ -11,5 +11,4 @@ cache:
   directories:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
-script:
-  - gradle clean build
+
