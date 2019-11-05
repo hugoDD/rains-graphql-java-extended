@@ -2,6 +2,9 @@
 rains-graphql-java-extended 基于[graphql-java](https://github.com/graphql-java/graphql-java). [springboot],为了完善graphql方案进行的扩展。
 主要是自定义类型和自定义指令的扩展。
 
+![license](https://img.shields.io/badge/license-Apache--2.0-green.svg)
+[![Build Status](https://travis-ci.org/hugoDD/rains-graphql-java-extended.svg?branch=master)](https://travis-ci.org/hugoDD/rains-graphql-java-extended)
+[![Coverage Status](https://coveralls.io/repos/github/hugoDD/rains-graphql-java-extended/badge.svg?branch=master)](https://coveralls.io/github/hugoDD/rains-graphql-java-extended?branch=master)
 
 # 概要
  - `自定义类型`
