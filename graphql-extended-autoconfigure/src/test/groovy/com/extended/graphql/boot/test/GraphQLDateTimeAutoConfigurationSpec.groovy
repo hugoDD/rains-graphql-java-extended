@@ -28,7 +28,7 @@ import spock.lang.Specification
 /**
  * @author <ahref='mailto:280555235@qq.com' > hugoDD</a>
  */
-class GraphQLDateTimeAutoConfigurationSpec extends Specification {
+class GraphQLDateTimeAutoConfigurationSpec /*extends Specification */{
 
     AbstractApplicationContext context
 

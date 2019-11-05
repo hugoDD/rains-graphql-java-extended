@@ -4,6 +4,7 @@ import graphql.GraphQLError
 import graphql.GraphqlErrorBuilder
 import graphql.execution.ExecutionStepInfo
 import graphql.execution.MergedField
+import graphql.extended.validation.TestUtil
 import graphql.extended.validation.constraints.DirectiveConstraints
 import graphql.extended.validation.interpolation.ResourceBundleMessageInterpolator
 import graphql.extended.validation.rules.TargetedValidationRules

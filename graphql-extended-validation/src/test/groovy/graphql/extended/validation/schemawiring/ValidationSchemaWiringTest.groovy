@@ -1,6 +1,7 @@
 package graphql.extended.validation.schemawiring
 
 import graphql.GraphQL
+import graphql.extended.validation.TestUtil
 import graphql.extended.validation.constraints.DirectiveConstraints
 import graphql.extended.validation.rules.ValidationRules
 import graphql.schema.idl.RuntimeWiring
@@ -37,7 +38,7 @@ class ValidationSchemaWiringTest extends Specification {
         ValidationRules possibleRules = ValidationRules.newValidationRules()
                 .build()
 
-        ValidationSchemaWiringHelp schemaWiring = new ValidationSchemaWiringHelp(possibleRules)
+        ValidationSchemaWiring schemaWiring = new ValidationSchemaWiring(possibleRules)
 
         def runtime = RuntimeWiring.newRuntimeWiring().directiveWiring(schemaWiring).build()
         def schema = TestUtil.schema(sdl, runtime)

@@ -15,11 +15,13 @@
  */
 package com.extended.graphql.boot.test;
 
+import com.extended.graphql.boot.GraphQLExtendedAutoConfiguration;
 import com.extended.graphql.scalars.datetime.*;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.oembedler.moon.graphql.boot.GraphQLJavaToolsAutoConfiguration;
+import com.oembedler.moon.graphql.boot.GraphQLWebAutoConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.*;
 import org.springframework.context.support.AbstractApplicationContext;
@@ -40,8 +42,10 @@ public class ContextHelper {
 
         AnnotationConfigRegistry registry = (AnnotationConfigRegistry) context;
 
+        registry.register(GraphQLExtendedAutoConfiguration.class);
         registry.register(BaseConfiguration.class);
         registry.register(GraphQLJavaToolsAutoConfiguration.class);
+
 
         context.refresh();
 
@@ -49,7 +53,6 @@ public class ContextHelper {
     }
 
     @Configuration
-    @ComponentScan("com.zhokhov.graphql.datetime.boot")
     static class BaseConfiguration {
 
         // initialize date time types here

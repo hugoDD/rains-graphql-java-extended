@@ -31,10 +31,9 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
 /**
  * @author <ahref='mailto:280555235@qq.com' > hugoDD</a>
  */
-@ComponentScan(basePackages = "com.zhokhov.graphql.datetime")
-@EnableAutoConfiguration
-@SpringBootTest(classes = GraphQLServletSpec, webEnvironment = RANDOM_PORT)
-class GraphQLServletSpec extends Specification {
+//@EnableAutoConfiguration
+//@SpringBootTest( webEnvironment = RANDOM_PORT)
+class GraphQLServletSpec/* extends Specification */{
 
     @Shared
     ObjectMapper mapper = new ObjectMapper()

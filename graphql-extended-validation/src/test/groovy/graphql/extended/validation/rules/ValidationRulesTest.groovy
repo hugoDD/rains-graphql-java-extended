@@ -2,6 +2,7 @@ package graphql.extended.validation.rules
 
 import graphql.GraphQL
 import graphql.execution.DataFetcherResult
+import graphql.extended.validation.TestUtil
 import graphql.extended.validation.constraints.DirectiveConstraints
 import graphql.extended.validation.rules.ValidationRules
 import graphql.schema.DataFetcher

@@ -27,8 +27,6 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 /**
  * This message interpolator will try to convert message templates into I18N messages and then run message property replacement
  * and expression interpolation.
- * <p>
- * <p>
  * By default this looks for a resource bundle file called "ValidationMessages.properties" on the class path but you can can
  * override {@link #getResourceBundle(Locale)} to provide your own resource bundle
  * <p>
