@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.extended.graphql.boot.GraphQLExtendedAutoConfiguration,\
+com.extended.graphql.boot.GraphQLJavaValidationAutoConfiguration

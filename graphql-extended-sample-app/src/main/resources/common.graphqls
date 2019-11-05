@@ -1,0 +1,16 @@
+# Date implementation
+scalar MyDate
+# LocalDate implementation
+scalar MyLocalDate
+# LocalDateTime implementation
+scalar LocalDateTime
+# LocalTime implementation
+scalar LocalTime
+
+scalar Object
+# 树children类型
+scalar TreeNode
+
+
+directive @Size(min : Int = 0, max : Int = 2147483647, message : String = "graphql.validation.Size.message")
+on ARGUMENT_DEFINITION | INPUT_FIELD_DEFINITION

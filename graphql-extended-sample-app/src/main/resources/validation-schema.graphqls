@@ -1,0 +1,7 @@
+input Application {
+    name : String @Size( max : 100)
+}
+
+extend type  Query {
+    hired (applications : [Application!] @Size(max : 3 )) : Boolean
+}
